@@ -1,0 +1,26 @@
+<div ng-controller="loginController">
+    <div class="container">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h1><span class="fa fa-sign-in"></span> Login</h1>
+            <!-- LOGIN FORM -->
+            <form>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control"  ng-model="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control"  ng-model="password" name="password">
+                </div>
+        
+                <button type="submit" class="btn btn-warning btn-lg" ng-click="login()">Login</button>
+            </form>
+        
+            <hr>
+        
+            <p>Need an account? <a  href="#" ng-click="changeRoute()">Signup</a></p>
+            <p>Or go <a  href="#" ng-click="changeRoute(home)">home</a>.</p>
+        </div>
+        
+        </div>
+</div>

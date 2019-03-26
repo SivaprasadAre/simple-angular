@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <title>SIVAPRASAD</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      
+    }
+.but{
+    border: none;
+      color: #fff;
+      background-color: #000000;
+      height: 40px;
+      width: 9pc;
+}
+.btn-primary {
+    border: none;
+      color: #fff;
+      background-color: #000000;
+ }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+<div ng-app='myApp' ng-controller="mainController">
+     <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Portfolio</a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="" ng-click="changeRoute('home')">Home</a></li>
+            <li><a href="" ng-click="changeRoute('about')">About</a></li>
+            <li><a href="" ng-click="changeRoute('subjects')">Subject</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href=""  ng-click="changeRoute('login')" value="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div ui-view></div>
+</div>
+<footer class="container-fluid text-center">
+<p>Footer Text</p>
+</footer>
+</div>
+
+<script src='js/angular.js'></script>
+<script src='js/angular-ui-router.js'></script>
+<script src='js/angular-resource.js'></script>
+
+<script src='app/app.js'></script>
+</body>
+</html>

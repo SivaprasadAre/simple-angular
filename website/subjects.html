@@ -1,0 +1,18 @@
+<div ng-controller="subjectsController">
+    <div class="container">
+        <h1>Subject Page</h1>
+        <div>
+            <h3>Subject List</h3>
+            <table>
+                <tbody>
+                    <div ng-repeat="x in subjects">
+                        <div ng-click="addTask(x.titale,x.description)" style="width:259px; height: 200px; margin: 10px;border: 1px solid black;background-color: #4f8eff;float: left;color: white; text-align: center; padding: 10px 0;">
+                            <h3>{{x.titale}}</h3>
+                            <p>{{x.description}}</p>
+                        </div>
+                    </div>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
